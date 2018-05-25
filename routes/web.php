@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// 首页
+Route::get('/', 'PagesController@home')->name('home');
 
 // 测试log
 Route::get('test/log', 'TestController@log')->name('test.log');
