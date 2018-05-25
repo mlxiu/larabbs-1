@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// 测试log
+Route::get('test/log', 'TestController@log')->name('test.log');
